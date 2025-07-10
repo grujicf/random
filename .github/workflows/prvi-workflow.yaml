@@ -5,7 +5,7 @@ on:
 
 jobs:
   test:
-  runs-on: ubuntu-latest
-  steps:
+   runs-on: ubuntu-latest
+   steps:
     - name: Greeting
       run: echo "Hello world, what's up!"
