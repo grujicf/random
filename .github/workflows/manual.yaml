@@ -1,0 +1,12 @@
+name: My manual workflow
+on:
+  workflow_dispatch:
+
+jobs:
+  ispis:
+    runs-on: ubuntu-latest
+    steps:
+    - name: first step
+      run: echo "Hi manual"
+    - name: second step
+      run: echo "what's up"
