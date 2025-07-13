@@ -1,0 +1,11 @@
+name: Random workflow
+on:
+  push:
+    branches: [main, feat]
+
+jobs:
+  test:
+   runs-on: ubuntu-latest
+   steps:
+    - name: Greeting
+      run: echo "Hello world from the random workflow!"
