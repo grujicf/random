@@ -1,5 +1,6 @@
 name: Random workflow
 on:
+  workflow_dispatch:
   push:
     branches: [main, feat]
 
