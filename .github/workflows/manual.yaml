@@ -27,3 +27,8 @@ jobs:
       run: echo "Hello from the first step!"
     - name: second step
       run: echo "Hello fromn the second step!"
+    - name: print inputs
+      run: |
+        echo Name: ${{ inputs.name }}
+        echo Surname: ${{ inputs. surname }}
+        echo Favourite color: ${{ inputs.fav_color }}
