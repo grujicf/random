@@ -9,6 +9,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: list files
+        run: ls
       - name: upload
         uses: actions/upload-artifact@v4
         with: 
