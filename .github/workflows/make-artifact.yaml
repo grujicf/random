@@ -31,12 +31,8 @@ jobs:
          name: fajlovi
          path: ./ovde/stavi
       - name: list files
-        run: ls
-      - name: change directory
-        run: cd ovde
-      - name: list files
-        run: ls
-      - name: change directory
-        run: cd stavi
-      - name: list files
-        run: ls
+        run: |
+          ls
+          cd ovde
+          ls
+          cd stavi
