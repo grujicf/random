@@ -1,0 +1,25 @@
+name: Download artifact
+
+on:
+  push:
+    branches: dl-artifacts
+
+jobs:
+  download-artifact:
+    runs-on: ubuntu-latest
+      
+    steps:
+      - name: download
+        uses: actions/download-artifact@v4
+        with:
+         name: fajlovi
+         path: ./ovde/stavi
+         github-token: ${{ github.token }}
+         run-id: 16381549039
+      - name: list files
+        run: |
+          ls
+          cd ovde
+          ls
+          cd stavi
+          ls
