@@ -18,3 +18,17 @@ jobs:
         with: 
          name: fajlovi
          path: ./
+      - name: sleep a little
+        run: sleep 20
+  download-artifact:
+    needs: upload-artifact
+    runs-on: ubuntu-latest
+      
+    steps:
+      - name: download
+        uses: actions/download-artifact@v4
+        with:
+         name: fajlovi
+         path: ./ovde/ih/smesti
+      - name: list files
+        run: ls
