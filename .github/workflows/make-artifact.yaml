@@ -29,6 +29,14 @@ jobs:
         uses: actions/download-artifact@v4
         with:
          name: fajlovi
-         path: ./ovde/ih/smesti
+         path: ./ovde/stavi
+      - name: list files
+        run: ls
+      - name: change directory
+        run: cd ovde
+      - name: list files
+        run: ls
+      - name: change directory
+        run: cd stavi
       - name: list files
         run: ls
